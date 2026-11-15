@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c7tp0qjkr8ssg"]
+
+[ext_resource type="Script" uid="uid://cgwi63ydbxmkb" path="res://death.gd" id="1_56rgi"]
+[ext_resource type="PackedScene" uid="uid://dx1yyyu5k7oc2" path="res://lev_1.tscn" id="1_531me"]
+[ext_resource type="Texture2D" uid="uid://c5lvo1sh2fhfj" path="res://sprites/deadth.png" id="1_qemge"]
+[ext_resource type="PackedScene" uid="uid://b0oyqfu33ruof" path="res://buttons/lev_2.tscn" id="3_4868a"]
+[ext_resource type="PackedScene" uid="uid://2gxpucghy2po" path="res://buttons/3.tscn" id="4_4868a"]
+[ext_resource type="PackedScene" uid="uid://dcuigkxkrnn2p" path="res://buttons/l_4.tscn" id="5_f0m10"]
+[ext_resource type="PackedScene" uid="uid://de4ged664ef4m" path="res://buttons/l_5.tscn" id="6_wmr2h"]
+[ext_resource type="PackedScene" uid="uid://dhk1e22dlhcp0" path="res://l_4 ez.tscn" id="8_r6ms4"]
+[ext_resource type="PackedScene" uid="uid://cc6jh775208ug" path="res://l_5 ez.tscn" id="9_jxpam"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_r6ms4"]
+font_size = 94
+
+[node name="death" type="Node2D" unique_id=744619142]
+script = ExtResource("1_56rgi")
+
+[node name="lev1" parent="." unique_id=446339313 instance=ExtResource("1_531me")]
+position = Vector2(272, 448.00003)
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177465405]
+position = Vector2(584, 152)
+scale = Vector2(11.5, 9.25)
+texture = ExtResource("1_qemge")
+
+[node name="lev2" parent="." unique_id=1477580995 instance=ExtResource("3_4868a")]
+position = Vector2(408, 448)
+scale = Vector2(3, 3)
+
+[node name="Node2D" parent="." unique_id=40605789 instance=ExtResource("4_4868a")]
+position = Vector2(544, 448)
+scale = Vector2(3, 3)
+
+[node name="l4" parent="." unique_id=1713065775 instance=ExtResource("5_f0m10")]
+position = Vector2(680, 448)
+scale = Vector2(3, 3)
+
+[node name="l5" parent="." unique_id=1084753037 instance=ExtResource("6_wmr2h")]
+position = Vector2(816.00006, 448.00003)
+scale = Vector2(3, 3)
+
+[node name="Label" type="Label" parent="." unique_id=1700647112]
+offset_left = 304.0
+offset_top = 296.0
+offset_right = 363.0
+offset_bottom = 425.0
+label_settings = SubResource("LabelSettings_r6ms4")
+
+[node name="l6" parent="." unique_id=1537053116 instance=ExtResource("8_r6ms4")]
+position = Vector2(680, 520)
+scale = Vector2(3, 3)
+
+[node name="Label2" type="Label" parent="." unique_id=1597735569]
+offset_left = 712.0
+offset_top = 576.0
+offset_right = 752.0
+offset_bottom = 599.0
+text = "easier"
+
+[node name="l7" parent="." unique_id=1920873248 instance=ExtResource("9_jxpam")]
+position = Vector2(816.00006, 520)
+scale = Vector2(3, 3)
+
+[node name="Label3" type="Label" parent="." unique_id=88354266]
+offset_left = 848.0
+offset_top = 576.0
+offset_right = 895.0
+offset_bottom = 599.0
+text = "easier"

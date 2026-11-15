@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d262pyhm778en"]
+
+[ext_resource type="Script" uid="uid://hl281lfn25sc" path="res://button.gd" id="1_n4tde"]
+[ext_resource type="Texture2D" uid="uid://of4as5wuv16y" path="res://sprites/retry.png" id="1_r04n3"]
+
+[node name="retry" type="Node2D" unique_id=981173864]
+script = ExtResource("1_n4tde")
+
+[node name="Button" type="Button" parent="." unique_id=1370956318]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("1_r04n3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
