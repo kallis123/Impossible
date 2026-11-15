@@ -1,0 +1,2 @@
+# Impossible
+pointless game
